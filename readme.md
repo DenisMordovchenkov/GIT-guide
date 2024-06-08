@@ -152,7 +152,7 @@ Git хранит таблицу соответствий `хеш → инфор�
 
 ```mermaid
 flowchart LR;
-	untracked-->|"git add"|staged;
+	untracked-->|"git add"|staged & tracked;
 	staged-->|"git commit"|tracked & commited;
 	modified-->|"git add"|staged & tracked;
 	tracked & commited-->|"git push"|online_repo;
