@@ -34,3 +34,5 @@ console.log(counter1()) //0
 console.log(counter1()) //1
 console.log(counter()) //5
 ```
+
+[Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/ "Клик")
