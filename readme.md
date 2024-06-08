@@ -141,11 +141,11 @@ Git хранит таблицу соответствий `хеш → инфор�
 >  После выполнения команды `git add` файл попадает в staging area (от англ. stage — «сцена», «этап [процесса]» и >area — «область»), то есть в список файлов, которые войдут в коммит. В этот момент файл находится в состоянии >`staged`.
 
 ```mermaid
-graph LR;
-	untracked + "git add" --> staged;
-	staged + "git commit" --> tracked/commited;
-	modified + "git add" --> staged/tracked;
-	tracked + commited + "git push" --> online repo;
+flowchart LR;
+	untracked---|"git add"|staged;
+	staged---|"git commit"|tracked/commited;
+	modified---|"git add"|staged/tracked;
+	tracked/commited---|"git push"|online repo;
 ``` 
 
 ---
